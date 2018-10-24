@@ -11,4 +11,12 @@ import UIKit
 // MARK: - AppDelegate 的拓展文件
 extension AppDelegate{
     
+    /// 初始化程序window
+    func initializationWindow(){
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
+        window?.rootViewController = MainTabBarVC.sharedInstance
+        window?.makeKeyAndVisible()
+    }
+    
 }
